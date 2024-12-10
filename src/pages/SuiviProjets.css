@@ -1,0 +1,79 @@
+/* Conteneur principal */
+.suivi-projets-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Titre */
+  .suivi-projets-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+  }
+  
+  /* Table */
+  .projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* En-tête du tableau */
+  .projects-table thead th {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 3px solid #0056b3;
+  }
+  
+  /* Corps du tableau */
+  .projects-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .projects-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Cellules du tableau */
+  .projects-table tbody td {
+    padding: 12px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Statut terminé */
+  .projects-table tbody tr.completed td {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Statut en cours */
+  .projects-table tbody tr.in-progress td {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .suivi-projets-container {
+      padding: 15px;
+    }
+  
+    .projects-table tbody td,
+    .projects-table thead th {
+      font-size: 12px;
+    }
+  }
+  

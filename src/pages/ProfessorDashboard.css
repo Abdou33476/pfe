@@ -1,0 +1,166 @@
+/* Global styles for the dashboard */
+.professor-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f7fa;  /* Light background color */
+}
+
+header, .sidebar {
+  width: 100%;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #090979;  /* Dark blue header */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header h2 {
+  margin: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);  /* Soft shadow for sidebar */
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 60px;  /* Adjust for fixed header */
+  left: 0;
+  padding-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #090979;
+  color: white;
+}
+
+.sidebar .user-info {
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .user-info img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.sidebar .user-info h3 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #090979;
+}
+
+/* Main content area styles */
+.main-content {
+  margin-left: 240px;  /* Space for sidebar */
+  margin-top: 80px;  /* Space for fixed header */
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section-specific styles */
+section h3 {
+  font-size: 1.5em;
+  color: #090979;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Style for buttons in the sidebar */
+.sidebar .menu-item {
+  background-color: transparent;
+  border: none;
+  color: #555;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #090979;
+  color: white;
+}
+
+/* For active section */
+.sidebar .menu-item.active {
+  background-color: #090979;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding-top: 10px;
+  }
+
+  .sidebar ul {
+    padding-left: 10px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+    margin-top: 60px;  /* Adjust for smaller header */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    box-shadow: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  header {
+    position: static;
+    width: 100%;
+  }
+}

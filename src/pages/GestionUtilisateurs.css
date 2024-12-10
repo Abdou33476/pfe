@@ -1,0 +1,114 @@
+.gestion-utilisateurs {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #090979;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* Formulaire d'ajout et modification d'utilisateur */
+.formulaire-utilisateur {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulaire-utilisateur input,
+.formulaire-utilisateur select,
+.formulaire-utilisateur button {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.formulaire-utilisateur input[type="text"],
+.formulaire-utilisateur input[type="email"],
+.formulaire-utilisateur select {
+  height: 40px;
+}
+
+.formulaire-utilisateur button {
+  background-color: #090979;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.formulaire-utilisateur button:hover {
+  background-color: #080660;
+}
+
+/* Filtrage par rôle */
+.filter-role {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-role select {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 150px;
+}
+
+.table-utilisateurs {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.table-utilisateurs th,
+.table-utilisateurs td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table-utilisateurs th {
+  background-color: #090979;
+  color: white;
+}
+
+.table-utilisateurs tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-utilisateurs button {
+  padding: 8px 16px;
+  background-color: #ff4040;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.table-utilisateurs button:hover {
+  background-color: #d43f3f;
+}
+
+.table-utilisateurs .btn-edit {
+  background-color: #ffa500;
+}
+
+.table-utilisateurs .btn-edit:hover {
+  background-color: #e68a00;
+}

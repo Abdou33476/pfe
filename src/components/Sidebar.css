@@ -1,0 +1,97 @@
+/* Conteneur principal de la sidebar */
+.sidebar-modern {
+  position: fixed;
+  top: 60px; /* Décalage vers le bas pour éviter de cacher l'en-tête */
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 70px); /* Calcul de la hauteur pour éviter que le contenu dépasse sous l'en-tête */
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+/* En-tête de la sidebar */
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.user-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.user-role {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Menu */
+.sidebar-menu-modern {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item-modern {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu-item-modern:hover {
+  background: rgba(0, 123, 255, 0.3);
+  transform: translateX(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 12px;
+}
+
+.menu-text {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Notifications */
+.sidebar-notification {
+  margin: 20px auto;
+  text-align: center;
+  
+}
+
+/* Footer */
+.sidebar-footer {
+  position: fixed;
+  bottom: 20px;
+  width: 230px;
+  text-align: center;
+}

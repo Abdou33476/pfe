@@ -1,0 +1,147 @@
+/* Container principal pour le formulaire */
+.proposition-pfe-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Titre principal */
+.proposition-pfe-container h2 {
+  text-align: center;
+  color: #004080;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #00aaff;
+  padding-bottom: 12px;
+}
+
+/* Formulaire */
+.proposition-pfe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Label des champs */
+.proposition-pfe-form label {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Champs de texte et sélecteurs */
+.proposition-pfe-form input,
+.proposition-pfe-form textarea,
+.proposition-pfe-form select {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.proposition-pfe-form input:focus,
+.proposition-pfe-form textarea:focus,
+.proposition-pfe-form select:focus {
+  border-color: #00aaff;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+/* Champs de texte multiline */
+.proposition-pfe-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Bouton de soumission */
+.proposition-pfe-form button {
+  background-color: #004080;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.proposition-pfe-form button:hover {
+  background-color: #002a66;
+}
+
+/* Message de confirmation */
+.confirmation-message {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e7f7ff;
+  border-left: 5px solid #00aaff;
+  font-size: 16px;
+  color: #004080;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Validation des champs */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: #ff4d4d;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: #4caf50;
+}
+
+/* Animation d'entrée pour les champs */
+.proposition-pfe-form input,
+.proposition-pfe-form textarea,
+.proposition-pfe-form select {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 600px) {
+  .proposition-pfe-container {
+    padding: 30px;
+  }
+
+  .proposition-pfe-form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .proposition-pfe-form textarea {
+    min-height: 120px;
+  }
+
+  .proposition-pfe-container h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,104 @@
+/* Conteneur principal */
+.suivi-projets-encadres-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Titre */
+  .suivi-projets-encadres-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  /* Wrapper pour un effet scrollable si nécessaire */
+  .projects-table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* Table */
+  .projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  /* En-tête du tableau */
+  .projects-table thead th {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  /* Corps du tableau */
+  .projects-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .projects-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .projects-table tbody tr:hover {
+    background-color: #f1f8ff;
+    transform: scale(1.02);
+  }
+  
+  /* Cellules */
+  .projects-table td {
+    padding: 15px;
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  /* Colonne ID */
+  .projects-table tbody td:first-child {
+    font-weight: bold;
+    color: #7f8c8d;
+  }
+  
+  /* Statuts dynamiques */
+  .projects-table tbody tr.completed td:last-child {
+    color: #27ae60;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .projects-table tbody tr.in-progress td:last-child {
+    color: #f39c12;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .suivi-projets-encadres-container {
+      padding: 20px;
+    }
+  
+    .projects-table td,
+    .projects-table th {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .suivi-projets-encadres-container h2 {
+      font-size: 24px;
+    }
+  }
+  

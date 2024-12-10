@@ -1,0 +1,29 @@
+.parametrage-emails {
+    padding: 20px;
+  }
+  
+  .form-email {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-email label {
+    margin: 10px 0 5px;
+  }
+  
+  .form-email input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-email button {
+    padding: 10px 20px;
+    background-color: #090979;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

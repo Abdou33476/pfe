@@ -1,0 +1,105 @@
+/* Conteneur du bouton de notification */
+.notification-container {
+    position: relative;
+    margin: 0 15px;
+    display: inline-block;
+  }
+  
+  /* Bouton de notification */
+  .notification-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    outline: none;
+  }
+  
+  /* Badge pour le nombre de notifications */
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Popup des notifications */
+  .notification-popup {
+    position: absolute;
+    top: 100%; /* Affichage en bas du bouton */
+    right: 0;
+    transform: translateY(10px); /* Décalage pour ajouter un espace */
+    width: 300px;
+    max-height: 400px; /* Hauteur maximale */
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    z-index: 1000;
+    overflow-y: auto; /* Barre de défilement si le contenu dépasse */
+  }
+  
+  /* Style des titres dans la popup */
+  .notification-popup h4 {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  /* Liste des notifications */
+  .notification-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-popup li {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .notification-popup li.unread {
+    font-weight: bold;
+    background-color: #f8f9fa; /* Légère couleur pour les notifications non lues */
+  }
+  
+  .notification-popup li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Icône dans les notifications */
+  .notification-popup li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Animation pour un effet plus moderne */
+  .notification-popup li:hover {
+    background: rgba(0, 123, 255, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
